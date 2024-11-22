@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Gallery from './Gallery';
 
 const App = () => {
-
+//route structure
   return (
     <Router>
     <Routes>
