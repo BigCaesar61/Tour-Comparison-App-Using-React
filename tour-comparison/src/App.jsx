@@ -2,17 +2,19 @@
 
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Gallery from './Gallery';
 
 const App = () => {
 //route structure
   return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<Gallery />} />
-    </Routes>
-  </Router>
+    <div>
+      <nav>
+        <button onClick={() => navigate('gallery')}>Gallery</button>
+      </nav>
+      <main>
+        {currentPage === 'gallery' && <Gallery />}
+      </main>
+    </div>
   );
 };
 

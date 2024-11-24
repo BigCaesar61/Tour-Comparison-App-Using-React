@@ -12,7 +12,7 @@ import React, { useState, useEffect } from 'react';
       const fetchTours = async () => {
         setLoading(true);
         try {
-          const response = await fetch('https://course-api.com/react-tours-project'); //pulls api
+          const response = await fetch('https://www.course-api.com/react-tours-project'); //pulls api
           const data = await response.json();
           setTours(data);
           setLoading(false);
